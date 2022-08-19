@@ -2,3 +2,19 @@ Fri 19 Aug 2022 01:08:29 PM UTC:
  tests:  0|6
 total_score: 0/70
 92e616a
+Fri 19 Aug 2022 01:12:45 PM UTC: 
+ list.c | 6 +++++-
+ 1 file changed, 5 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘createList’:
+list.c:36:10: error: ‘lst’ undeclared (first use in this function); did you mean ‘list’?
+   36 |   return lst;
+      |          ^~~
+      |          list
+list.c:36:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:37:1: error: control reaches end of non-void function [-Werror=return-type]
+   37 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+2a844f8
