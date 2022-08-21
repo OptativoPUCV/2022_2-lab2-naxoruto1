@@ -83,3 +83,19 @@ Sun 21 Aug 2022 03:24:32 PM UTC:
  tests:  2|5
 total_score: 15/70
 05cad69
+Sun 21 Aug 2022 03:36:03 PM UTC: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:48:23: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   48 |   list->current = list->next;
+      |                       ^~
+list.c:49:31: error: expected ‘;’ before ‘}’ token
+   49 |   return (list->current->next)
+      |                               ^
+      |                               ;
+   50 | }
+      | ~                              
+Compilation failed
+fc9b0db
