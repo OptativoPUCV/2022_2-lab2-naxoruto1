@@ -99,3 +99,13 @@ list.c:49:31: error: expected ‘;’ before ‘}’ token
       | ~                              
 Compilation failed
 fc9b0db
+Sun 21 Aug 2022 03:36:19 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘nextList’:
+list.c:48:23: error: ‘List’ {aka ‘struct List’} has no member named ‘next’
+   48 |   list->current = list->next;
+      |                       ^~
+Compilation failed
+dd52203
