@@ -376,3 +376,9 @@ list.c:54:65: error: expected expression before ‘List’
 cc1: all warnings being treated as errors
 Compilation failed
 f6af62b
+Sun 21 Aug 2022 04:17:59 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  6|4
+total_score: 25/70
+e1c1469
