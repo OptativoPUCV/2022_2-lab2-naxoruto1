@@ -249,3 +249,33 @@ Sun 21 Aug 2022 03:56:13 PM UTC:
  tests:  5|4
 total_score: 25/70
 255434b
+Sun 21 Aug 2022 04:03:09 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:54:8: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |        ^~~~~~~
+      |        popCurrent
+list.c:54:8: note: each undeclared identifier is reported only once for each function it appears in
+list.c:54:26: error: expected expression before ‘List’
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |                          ^~~~
+list.c:54:58: error: expected expression before ‘List’
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |                                                          ^~~~
+list.c:54:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |   ^~~
+list.c:55:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   55 |     return list->current->data);
+      |     ^~~~~~
+list.c:55:31: error: expected ‘;’ before ‘)’ token
+   55 |     return list->current->data);
+      |                               ^
+      |                               ;
+list.c:55:31: error: expected statement before ‘)’ token
+cc1: all warnings being treated as errors
+Compilation failed
+1d43a91
