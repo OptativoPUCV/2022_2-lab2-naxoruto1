@@ -625,3 +625,23 @@ list.c:81:9: error: unused variable ‘dato’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 b479d71
+Sun 21 Aug 2022 05:11:57 PM UTC: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:84:30: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   84 |   if(current == NULL) return NULL;
+      |                              ^~~~
+list.c:79:6: note: declared here
+   79 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+list.c:98:11: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   98 |     return(dato);
+      |           ^
+list.c:79:6: note: declared here
+   79 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+8b4d078
