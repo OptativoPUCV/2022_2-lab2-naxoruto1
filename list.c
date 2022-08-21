@@ -52,7 +52,7 @@ void * nextList(List * list) {
 
 void * lastList(List * list) {
   for (list->current; nextList(List * list) = NULL  ; nextList(List * list));
-    return list->current->data);
+  return (list->current->data);
 }
 
 void * prevList(List * list) {
