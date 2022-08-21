@@ -568,3 +568,26 @@ Sun 21 Aug 2022 05:08:24 PM UTC:
  tests:  10|2
 total_score: 45/70
 64abd91
+Sun 21 Aug 2022 05:10:13 PM UTC: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:81:10: error: ‘data’ redeclared as different kind of symbol
+   81 |   void * data = current->data;
+      |          ^~~~
+list.c:79:38: note: previous definition of ‘data’ was here
+   79 | void pushCurrent(List * list, void * data) {
+      |                               ~~~~~~~^~~~
+list.c:82:30: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   82 |   if(current == NULL) return NULL;
+      |                              ^~~~
+list.c:79:6: note: declared here
+   79 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+list.c:81:10: error: unused variable ‘data’ [-Werror=unused-variable]
+   81 |   void * data = current->data;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+a6ed89c
