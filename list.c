@@ -63,6 +63,12 @@ void * prevList(List * list) {
 }
 
 void pushFront(List * list, void * data) {
+  Node * new = createNode(data); // creacion nodo
+  new->next = list->head; //el puntero next apunta al head
+  if (list->head) //si existe head, el anterior a esa será el new
+    list->head->prev = new;
+  list->head = new;
+  new->prev = NULL; 
 }
 
 void pushBack(List * list, void * data) {
