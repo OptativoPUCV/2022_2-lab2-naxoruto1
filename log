@@ -342,3 +342,20 @@ list.c:54:58: error: expected expression before ‘List’
       |                                                          ^~~~
 Compilation failed
 bde2b32
+Sun 21 Aug 2022 04:12:16 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:54:12: error: statement with no effect [-Werror=unused-value]
+   54 |   for (list->current; nextList(List * list) = NULL  ; nextList(List * list));
+      |        ~~~~^~~~~~~~~
+list.c:54:32: error: expected expression before ‘List’
+   54 |   for (list->current; nextList(List * list) = NULL  ; nextList(List * list));
+      |                                ^~~~
+list.c:54:64: error: expected expression before ‘List’
+   54 |   for (list->current; nextList(List * list) = NULL  ; nextList(List * list));
+      |                                                                ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+5138c52
