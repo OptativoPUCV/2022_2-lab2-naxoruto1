@@ -461,3 +461,17 @@ Sun 21 Aug 2022 05:03:14 PM UTC:
  tests:  10|2
 total_score: 45/70
 3b0f974
+Sun 21 Aug 2022 05:03:41 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:94:12: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+   94 |     return (dato);
+      |            ^
+list.c:79:6: note: declared here
+   79 | void pushCurrent(List * list, void * data) {
+      |      ^~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+bce9687
