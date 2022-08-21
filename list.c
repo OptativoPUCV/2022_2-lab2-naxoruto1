@@ -68,7 +68,7 @@ void pushFront(List * list, void * data) {
   if (list->head) //si existe head, el anterior a esa será el new
     list->head->prev = new;
   list->head = new;
-  //list->tail = new;
+  list->tail = new;
 }
 
 void pushBack(List * list, void * data) {
