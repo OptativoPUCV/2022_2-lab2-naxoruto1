@@ -78,7 +78,7 @@ void pushBack(List * list, void * data) {
 
 void pushCurrent(List * list, void * data) {
   Node * current = list->current;
-  void *dato = current->data;
+  //void *dato = current->data;
   if (current == list->head){
     current->next->prev = NULL;
     list->head = current->next;
