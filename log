@@ -324,3 +324,21 @@ list.c:54:64: error: expected expression before ‘List’
 cc1: all warnings being treated as errors
 Compilation failed
 8ff8425
+Sun 21 Aug 2022 04:11:54 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘lastList’:
+list.c:54:8: error: ‘current’ undeclared (first use in this function); did you mean ‘popCurrent’?
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |        ^~~~~~~
+      |        popCurrent
+list.c:54:8: note: each undeclared identifier is reported only once for each function it appears in
+list.c:54:26: error: expected expression before ‘List’
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |                          ^~~~
+list.c:54:58: error: expected expression before ‘List’
+   54 |   for (current; nextList(List * list) = NULL  ; nextList(List * list));
+      |                                                          ^~~~
+Compilation failed
+bde2b32
