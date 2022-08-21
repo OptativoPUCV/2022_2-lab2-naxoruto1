@@ -41,3 +41,9 @@ list.c:40:15: error: ‘head’ undeclared (first use in this function)
 list.c:40:15: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 72c9719
+Sun 21 Aug 2022 03:18:24 PM UTC: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  1|5
+total_score: 10/70
+68e888f
