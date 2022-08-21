@@ -489,3 +489,14 @@ list.c:79:6: note: declared here
 cc1: all warnings being treated as errors
 Compilation failed
 a2df68f
+Sun 21 Aug 2022 05:04:14 PM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:81:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+   81 |   void *dato = current->data;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2f3ebaf
