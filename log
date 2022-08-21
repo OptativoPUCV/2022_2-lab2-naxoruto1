@@ -30,3 +30,14 @@ Sun 21 Aug 2022 03:09:53 PM UTC:
  tests:  1|5
 total_score: 10/70
 6c1df8a
+Sun 21 Aug 2022 03:14:55 PM UTC: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘firstList’:
+list.c:40:15: error: ‘head’ undeclared (first use in this function)
+   40 |   firstList = head->list;
+      |               ^~~~
+list.c:40:15: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+72c9719
