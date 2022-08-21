@@ -77,10 +77,23 @@ void pushBack(List * list, void * data) {
 }
 
 void pushCurrent(List * list, void * data) {
+  
+}
+
+void * popFront(List * list) {
+    list->current = list->head;
+    return popCurrent(list);
+}
+
+void * popBack(List * list) {
+    list->current = list->tail;
+    return popCurrent(list);
+}
+
+void * popCurrent(List * list) {
   Node *current = list->current;
   void *dato = current->data;
 
-  
   if(current == NULL) return NULL;
 
   if (current == list->head){
@@ -97,20 +110,6 @@ void pushCurrent(List * list, void * data) {
     free(current);
     return dato;
   }
-}
-
-void * popFront(List * list) {
-    list->current = list->head;
-    return popCurrent(list);
-}
-
-void * popBack(List * list) {
-    list->current = list->tail;
-    return popCurrent(list);
-}
-
-void * popCurrent(List * list) {
-    return NULL;
 }
 
 void cleanList(List * list) {
